@@ -82,7 +82,6 @@ Base URL = www.peoplescollection.wales/rest/vi
         "lat"​: ​ "0.00047079079787572"​,
         ​"lon"​: ​ "­3.6735926310528E­5"​
     },
-
     {​
         "lat"​: ​ "0.00047079150339908"​,
         ​"lon"​: ​ "­3.6738432158655E­5"​
@@ -126,7 +125,6 @@ Base URL = www.peoplescollection.wales/rest/vi
         "lat"​: ​ "0.00047085517220069"​,
         ​"lon"​: ​ "­3.6725999296791E­5"​
     }, {
-
         "lat"​: ​ "0.00047085711209733"​,
         ​"lon"​: ​ "­3.6716554176924E­5"​
     }, {​
@@ -225,7 +223,7 @@ Within the data array the following keys are accepted:
 
 #### POST Data Example
 
-```
+```php
 <?php
 
 $postData​[​'title[en]'​] = ​'API Test Title English'​; 

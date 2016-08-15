@@ -10,7 +10,7 @@ A brief example of GET programmatic API usage can be seen here:
 
 ```php
 <?php
-define('BASE_URI', 'http://www.peoplescollection.wales/rest/v1/'); 
+define('BASE_URI', 'https://www.peoplescollection.wales/rest/v1/'); 
 define('API_CONSUMER_KEY', '...'); 
 define('API_CONSUMER_SECRET', '...'); 
 define('API_ACCESS_TOKEN', '...'); 
@@ -36,7 +36,7 @@ For POST requests, the ```$oauth->fetch()``` is modified to carry the ```$postDa
 
 ```php
 <?php
-define('BASE_URI', 'http://www.peoplescollection.wales/rest/v1/'); 
+define('BASE_URI', 'https://www.peoplescollection.wales/rest/v1/'); 
 define('API_CONSUMER_KEY', '...'); 
 define('API_CONSUMER_SECRET', '...'); 
 define('API_ACCESS_TOKEN', '...'); 
@@ -75,7 +75,7 @@ signed in, create a new consumer by providing a name and a callback URL, and
 save; a key and a secret will be generated which will allow programmatic
 access to the API.
 
-> Direct link - http://www.peoplescollection.wales/user/3576/oauth/consumer 
+> Direct link - https://www.peoplescollection.wales/user/3576/oauth/consumer 
 
 > Replace 3576 with your user ID.
 
@@ -87,7 +87,7 @@ demonstrates this process:
 
 ```php
 <?php
-define('BASE_URI', 'http://www.peoplescollection.wales/rest/v1/'); 
+define('BASE_URI', 'https://www.peoplescollection.wales/rest/v1/'); 
 define('API_CONSUMER_KEY', '...'); 
 define('API_CONSUMER_SECRET', '...');
 
@@ -99,7 +99,7 @@ $oauth = new OAuth(
 );
 
 $my_tokens = $oauth->getRequestToken(
-    'http://www.peoplescollection.wales/oauth/request_token'
+    'https://www.peoplescollection.wales/oauth/request_token'
 );
 
 $oauth->setToken(
@@ -108,7 +108,7 @@ $oauth->setToken(
 );
 
 // Redirect to authorise request token
-header('Location: http://www.peoplescollection.wales/oauth/authorize?
+header('Location: https://www.peoplescollection.wales/oauth/authorize?
         oauth_token=' . $my_tokens['oauth_token']);
 ```
 
@@ -136,7 +136,7 @@ $oauth->setToken(
 );
 
 $access_token = $oauth->getAccessToken(
-    'http://www.peoplescollection.wales/oauth/access_token'
+    'https://www.peoplescollection.wales/oauth/access_token'
 );
 ```
 
@@ -150,7 +150,7 @@ Below is a full example of a one page script to handle authentication, obtaining
 <?php
 session_start();
 
-define('BASE_URL', 'http://www.peoplescollection.wales');
+define('BASE_URL', 'https://www.peoplescollection.wales');
 define('BASE_PATH', '/rest/v1/');
 define('CONSUMER_KEY', '...');
 define('CONSUMER_SECRET', '...');

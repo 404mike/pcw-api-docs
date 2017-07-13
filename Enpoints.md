@@ -1,3 +1,3 @@
 # 2. Endpoints
 
-Each endpoint uses the same base URL, http://www.peoplescollection.wales/rest/v1.
+Each endpoint uses the same base URL, https://www.peoplescollection.wales/rest/v1.

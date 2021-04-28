@@ -18,7 +18,7 @@ story?[parameters]
 
 ```php
 <?php
-$oauth->fetch(BASE_URI.'story/378092');
+$oauth->fetch(BASE_URI.'/story/378092');
 print_r($oauth->getLastResponse());
 ```
 
@@ -35,7 +35,7 @@ print_r($oauth->getLastResponse());
 #### Request Example
 
 ```
-Base URL = www.peoplescollection.wales/rest/vi
+Base URL = https://www.peoplescollection.wales/rest/vi
 ```
 
 #### Endpoints
@@ -56,7 +56,7 @@ Base URL = www.peoplescollection.wales/rest/vi
     "cy": "Ynysywern Farm and the Upper Boat Power Station"
   },
   "nodeType": "story",
-  "url": "http://dev.peoplescollectionwales.co.uk/story/493287",
+  "url": "https://www.peoplescollectionwales.co.uk/story/493287",
   "created": 1452782182,
   "updated": 1452857820,
   "status": "published",
@@ -68,7 +68,7 @@ Base URL = www.peoplescollection.wales/rest/vi
            and the power station have vanished completely under the 
            Treforest Trading Estate."
   },
-  "thumbnail": "http://dev.peoplescollectionwales.co.uk/",
+  "thumbnail": "https://www.peoplescollectionwales.co.uk/",
   "author": {
     "id": 3106,
     "name": "Royal Commission on the Ancient and Historical Monuments 
@@ -99,7 +99,7 @@ Base URL = www.peoplescollection.wales/rest/vi
         "name": "Royal Commission on the Ancient and Historical 
                  Monuments of Wales"
       },
-      "thumbnail_path": "http://dev.peoplescollectionwales.co.uk/
+      "thumbnail_path": "https://www.peoplescollectionwales.co.uk/
                          sites/pcw/files/styles/
                          edit_node_thumb_larger/public/images/2015/
                          February/%20WPW032552.jpg?itok=pNcaUQu2"
@@ -113,7 +113,7 @@ Base URL = www.peoplescollection.wales/rest/vi
         "name": "Royal Commission on the Ancient and Historical 
                  Monuments of Wales"
       },
-      "thumbnail_path": "http://dev.peoplescollectionwales.co.uk/
+      "thumbnail_path": "https://www.peoplescollectionwales.co.uk/
                          sites/pcw/files/styles/
                          edit_node_thumb_larger/public/images/2016/
                          January/DI2012_0464.jpg?itok=gWDbVat2"
@@ -127,7 +127,7 @@ Base URL = www.peoplescollection.wales/rest/vi
         "name": "Royal Commission on the Ancient and Historical 
                  Monuments of Wales"
       },
-      "thumbnail_path": "http://dev.peoplescollectionwales.co.uk/
+      "thumbnail_path": "https://www.peoplescollectionwales.co.uk/
                          sites/pcw/files/styles/
                          edit_node_thumb_larger/public/images/2016/
                          January/DI2012_0466.jpg?itok=8RZ20FuK"
@@ -142,7 +142,7 @@ Base URL = www.peoplescollection.wales/rest/vi
         "name": "Royal Commission on the Ancient and Historical 
                  Monuments of Wales"
       },
-      "thumbnail_path": "http://dev.peoplescollectionwales.co.uk/
+      "thumbnail_path": "https://www.peoplescollectionwales.co.uk/
                          sites/pcw/files/styles/
                          edit_node_thumb_larger/public/images/2016/
                          January/DI2012_0472.jpg?itok=cqBpnVDl"
@@ -158,7 +158,7 @@ Base URL = www.peoplescollection.wales/rest/vi
         "name": "Royal Commission on the Ancient and Historical 
                  Monuments of Wales"
       },
-      "thumbnail_path": "http://dev.peoplescollectionwales.co.uk/
+      "thumbnail_path": "https://www.peoplescollectionwales.co.uk/
                          sites/pcw/files/styles/
                          edit_node_thumb_larger/public/images/2016/
                          January/mapping.jpg?itok=rqYjPbc4"
@@ -188,7 +188,7 @@ $oauth = new OAuth(
 $oauth->setToken(API_ACCESS_TOKEN, API_ACCESS_TOKEN_SECRET);
 
 $oauth->fetch(
-    "http://www.peoplescollection.wales/rest/v1/story", 
+    "https://www.peoplescollection.wales/rest/v1/story", 
     $postData, 
     OAUTH_HTTP_METHOD_POST
 );

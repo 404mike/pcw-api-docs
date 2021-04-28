@@ -18,7 +18,7 @@ item?[parameters]
 
 ```php
 <?php
-$oauth->fetch(BASE_URI.'item/346');
+$oauth->fetch(BASE_URI.'/item/346');
 print_r($oauth->getLastResponse());
 ```
 
@@ -50,7 +50,7 @@ print_r($oauth->getLastResponse());
 #### Request Examples:
 
 ```
-Base URL = https://www.peoplescollection.wales/rest/v1
+Base URL = www.peoplescollection.wales/rest/v1
 ```
 
 #### Endpoints
@@ -75,7 +75,7 @@ Base URL = https://www.peoplescollection.wales/rest/v1
     "cy": "Hufenfa Rhydygwystyl, 31 Mawrth 1955"
   },
   "nodeType": "item",
-  "url": "https://dev.peoplescollectionwales.co.uk/items/346",
+  "url": "https://www.peoplescollectionwales.co.uk/items/346",
   "created": 1248797894,
   "updated": 1265364551,
   "status": "draft",
@@ -141,7 +141,7 @@ Base URL = https://www.peoplescollection.wales/rest/v1
   "files": [
     {
       "originalFilename": "GTJ11630_2.jpg",
-      "url": "https://dev.peoplescollectionwales.co.uk/sites/pcw/files/
+      "url": "https://www.peoplescollectionwales.co.uk/sites/pcw/files/
               images/2014/February/GTJ11630_2.jpg",
       "type": "image",
       "target_id": "319501"

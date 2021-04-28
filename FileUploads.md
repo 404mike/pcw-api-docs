@@ -10,7 +10,7 @@ $file = curl_file_create('file.jpg', 'image/jpeg', 'file.jpg');
 $data = array('files[attachment]' => $file);
 
 curl_setopt($ch, CURLOPT_URL, 
-            "http://www.peoplescollection.wales/api_gateway/file"); 
+            "https://www.peoplescollection.wales/api_gateway/file"); 
 curl_setopt($ch, CURLOPT_POST, 1); 
 curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

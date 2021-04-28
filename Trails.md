@@ -19,8 +19,8 @@ trails?[parameters]
 ```php
 <?php
 
-$oauth​­>​fetch​(​BASE_URI​.​'trail/378385'​)​;
-print_r(​$oauth​­>​getLastResponse​())​;
+$oauth​­->​fetch​(​BASE_URI​.​'/trail/378385'​)​;
+print_r(​$oauth​­->​getLastResponse​())​;
 ```
 
 #### Parameters
@@ -36,7 +36,7 @@ print_r(​$oauth​­>​getLastResponse​())​;
 #### Request Examples:
 
 ````
-Base URL = www.peoplescollection.wales/rest/vi
+Base URL = https://www.peoplescollection.wales/rest/vi
 ```
 
 #### Endpoints
@@ -57,11 +57,11 @@ Base URL = www.peoplescollection.wales/rest/vi
         ​"cy"​: ​ "Prom Aberystwyth ­ 'Cicio'r bar'"​
     },
     ​"nodeType"​: ​ "trail"​,
-    ​"url"​: ​ "http://www.peoplescollection.wales/trails/378385"​,
+    ​"url"​: ​ "https://www.peoplescollection.wales/trails/378385"​,
     ​"created"​: ​1260195645​,
     ​"updated"​: ​1393450436​,
     ​"status"​: ​ "draft"​,
-    ​"thumbnail"​: ​ "http://www.peoplescollection.wales/sites/default/files/​
+    ​"thumbnail"​: ​ "https://www.peoplescollection.wales/sites/default/files/​
     trail­ images / ​2014​ / February / prom_aber_0.jpg​ ", ​"
     author "​:{​
     "id"​: ​1042​,
@@ -191,11 +191,11 @@ $oauth ​= ​new ​OAuth(
   OAUTH_AUTH_TYPE_URI 
 )​;
 
-$oauth​­>​setToken​( ​API_TOKEN​ ​, ​API_TOKEN_SECRET​ ​)​;
+$oauth​­->​setToken​( ​API_TOKEN​ ​, ​API_TOKEN_SECRET​ ​)​;
 
-$oauth​­>​fetch​("http://www.peoplescollection.wales/rest/v1/trail"​, ​$postData​, ​OAUTH_HTTP_METHOD_POST )​;
+$oauth​­->​fetch​("https://www.peoplescollection.wales/rest/v1/trail"​, ​$postData​, ​OAUTH_HTTP_METHOD_POST )​;
 
-echo ​$oauth​­>​getLastResponse​()​;
+echo ​$oauth​­->​getLastResponse​()​;
 ```
 
 #### Parameters

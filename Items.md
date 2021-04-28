@@ -50,7 +50,7 @@ print_r($oauth->getLastResponse());
 #### Request Examples:
 
 ```
-Base URL = www.peoplescollection.wales/rest/v1
+Base URL = https://www.peoplescollection.wales/rest/v1
 ```
 
 #### Endpoints
@@ -75,7 +75,7 @@ Base URL = www.peoplescollection.wales/rest/v1
     "cy": "Hufenfa Rhydygwystyl, 31 Mawrth 1955"
   },
   "nodeType": "item",
-  "url": "http://dev.peoplescollectionwales.co.uk/items/346",
+  "url": "https://dev.peoplescollectionwales.co.uk/items/346",
   "created": 1248797894,
   "updated": 1265364551,
   "status": "draft",
@@ -141,14 +141,14 @@ Base URL = www.peoplescollection.wales/rest/v1
   "files": [
     {
       "originalFilename": "GTJ11630_2.jpg",
-      "url": "http://dev.peoplescollectionwales.co.uk/sites/pcw/files/
+      "url": "https://dev.peoplescollectionwales.co.uk/sites/pcw/files/
               images/2014/February/GTJ11630_2.jpg",
       "type": "image",
       "target_id": "319501"
     }
   ],
   "original_item_url": {
-    "en": "http://www.gtj.org.uk/en/small/item/GTJ11630",
+    "en": "https://www.gtj.org.uk/en/small/item/GTJ11630",
     "cy": ""
   },
   "guid": "33f0f0a1-37a4-4f20-8aca-3d70384cae65"
@@ -174,7 +174,7 @@ $oauth = new OAuth(
 $oauth->setToken(API_ACCESS_TOKEN, API_ACCESS_TOKEN_SECRET);
 
 $oauth->fetch(
-        "http://www.peoplescollection.wales/rest/v1/item", 
+        "https://www.peoplescollection.wales/rest/v1/item", 
         $postData, 
         OAUTH_HTTP_METHOD_POST
 );

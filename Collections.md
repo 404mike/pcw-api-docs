@@ -36,7 +36,7 @@ print_r($oauth->getLastResponse());
 #### Request Examples:
 
 ```
-Base URL = www.peoplescollection.wales/rest/vi
+Base URL = https://www.peoplescollection.wales/rest/vi
 ```
 
 #### Endpoints
@@ -57,11 +57,11 @@ Base URL = www.peoplescollection.wales/rest/vi
         ​"cy"​: ​ "Bengaleg"​
     },
     ​"nodeType"​: ​ "collection"​,
-    ​"url"​: ​ "http://www.peoplescollection.wales/collections/376879"​,
+    ​"url"​: ​ "https://www.peoplescollection.wales/collections/376879"​,
     ​"created"​: ​1249052139​,
     ​"updated"​: ​1421748647​,
     ​"status"​: ​ "published"​,
-    ​"thumbnail"​: ​ "http://www.peoplescollection.wales/"​,
+    ​"thumbnail"​: ​ "https://www.peoplescollection.wales/"​,
     ​"author"​: {​
         "id"​: ​3075​,
         ​"name"​: ​ "Amgueddfa Cymru ­ National Museum Wales"​
@@ -73,7 +73,7 @@ Base URL = www.peoplescollection.wales/rest/vi
         ​"title"​: ​ "Bengali"​,
         ​"type"​: ​ "picture"​,
         ​"author"​: ​ "Amgueddfa Cymru ­ National Museum Wales"​,
-        "thumbnail_path"​: ​ "http://www.peoplescollection.wales/sites/default/file s/styles/
+        "thumbnail_path"​: ​ "https://www.peoplescollection.wales/sites/default/file s/styles/
         edit_node_thumb_larger / public / images / ​2014​ / February / Bengali.jpg ? itok = ​1​ Dhmu8n D​ "​
     }, {​
         "nid"​: ​ "1273"​,
@@ -120,11 +120,11 @@ $oauth ​= ​new ​OAuth(
   OAUTH_AUTH_TYPE_URI 
 )​;
 
-$oauth​­>​setToken​( ​API_TOKEN​ ​, ​API_TOKEN_SECRET​ ​)​;
+$oauth->setToken( ​API_TOKEN​ ​, ​API_TOKEN_SECRET​ ​)​;
 
-$oauth​­>​fetch​("http://www.peoplescollection.wales/rest/v1/collection"​, ​$postData​, ​OAUTH_HTTP_METHOD_POST )​;
+$oauth->fetch("https://www.peoplescollection.wales/rest/v1/collection"​, ​$postData​, ​OAUTH_HTTP_METHOD_POST )​;
 
-echo ​$oauth​­>​getLastResponse​()​;
+echo ​$oauth->getLastResponse();
 ```
 
 #### Parameters

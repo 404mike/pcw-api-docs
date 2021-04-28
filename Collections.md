@@ -18,7 +18,7 @@ collections?[parameters]
 
 ```php
 <?php
-$oauth->fetch(BASE_URI.'collection/376879');
+$oauth->fetch(BASE_URI.'/collection/376879');
 print_r($oauth->getLastResponse());
 ```
 
